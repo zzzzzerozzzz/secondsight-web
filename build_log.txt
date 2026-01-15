@@ -1,0 +1,29 @@
+??Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\usera\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\usera\Downloads\SecondSight\web\package-lock.json
+
+??Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./Downloads/SecondSight/web/app/globals.css
+Error evaluating Node.js code
+Error: Missing field `negated` on ScannerOptions.sources
+    [at Object.Once (C:\Users\usera\Downloads\SecondSight\web\node_modules\@tailwindcss\postcss\dist\index.js:8:4164)]
+    at async LazyResult.runAsync (Downloads/SecondSight/web/node_modules/postcss/lib/lazy-result.js:293:11) [C:\Users\usera\Downloads\SecondSight\web\.next\build\chunks\2ae82_b3190deb._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Users\usera\Downloads\SecondSight\web\.next\build\chunks\[root-of-the-server]__f86b8c4e._.js:140:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [C:\Users\usera\Downloads\SecondSight\web\.next\build\chunks\[root-of-the-server]__36eed840._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/SecondSight/web/app/globals.css [Client Component Browser]
+    ./Downloads/SecondSight/web/app/layout.tsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Users\usera\Downloads\SecondSight\web\.next\build\chunks\[root-of-the-server]__f86b8c4e._.js:140:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [C:\Users\usera\Downloads\SecondSight\web\.next\build\chunks\[root-of-the-server]__36eed840._.js:443:31])
